@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+BE+WAL:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --corFuchsia950: #3b0764;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,li,a{
+    text-decoration: none;
+    list-style: none;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset; /* Remover autocomplete azul dos inputs */
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+    width: 100%;
+    background-image: url('../img/fundo.jpeg');
+    background-color: rgba(0, 0, 0, 0.849);
+    background-blend-mode: darken;
+    background-size: cover;
+}
+
+.title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    position: relative;
+    color: rgb(0, 0, 0);
+    text-transform: capitalize;
+}
+
+.title::before{
+    content: "";
+    position: absolute;
+    border-bottom: 3px solid var(--corFuchsia950);
+    width: 40%;
+    top: 32px;
+}
+
+.formulario.active .title{
+    color: white;
+}
+
+.lk{
+    color: rgb(0, 0, 0);
+}
+
+.title-name{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 15px;
+    border-radius: 50px;
+    cursor: pointer;
+}

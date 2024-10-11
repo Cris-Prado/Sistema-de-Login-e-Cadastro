@@ -1,0 +1,177 @@
+.formulario{
+    display: flex;
+    align-items: center;
+    box-shadow: 2px 10px 12px 2px rgb(0, 0, 0);
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 20px 5px;
+    background: white;
+    transition: all 0.4s;
+    gap: 10px;
+    position: absolute;
+}
+
+.fild{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    border: 0;
+    width: 100%;
+}
+
+.icox{
+    text-indent: 0.8rem;
+    color: black;
+}
+
+.inp-form{
+    height: 40px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.inp{
+    height: 100%;
+    background: none;
+    border: 0;
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    gap: 10px;
+}
+
+.inp:focus{
+    outline: none;
+}
+
+.bt-form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 0;
+    background-color: rgb(4, 1, 39);
+    color: white;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+.connect, .connect a{
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    width: 98%;
+}
+
+.theme{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    background-color: black;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.fa-moon{
+    color: white;
+    position: relative;
+}
+
+.theme .fa-sun{
+    display: none;
+    color: black;
+}
+
+.active .fa-moon{
+    display: none;
+}
+
+.active .fa-sun{
+    display: flex;
+}
+
+.active{
+    background-color: white;
+}
+
+.formulario.active{
+    background-color: rgb(27, 27, 27);
+    transition: all 0.4s;
+}
+
+.formulario.active .inp-form{
+    border: 1px solid white;
+}
+
+.formulario.active .connect a, .formulario.active .connect {
+    color: white;
+}
+
+
+
+/* Inicio da criação e comandos para desenvolvimento da tela de cadastro */
+
+.cad-title::before{
+    width: 22%;
+}
+
+.fild-cad{
+    flex-direction: row;
+}
+
+.connect-redes{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.RedeSocial{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+    border: 1px solid rgb(0, 0, 0);
+    height: 40px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.gogRed{
+    background-color: red;
+    color: white;
+}
+
+.FacRed{
+    background-color: blue;
+    color: white;
+}
+
+.inpNasc{
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+}
